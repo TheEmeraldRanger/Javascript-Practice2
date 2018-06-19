@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>*Insert clever title here*</title>
+    </head>
+    <body>
+        <h1>This should work (I think)</h1>
+        <script>
+            const gotCitiesCSV = "King's Landing,Braavos,Volantis,Old Valyria,Free Cities,Qarth,Meereen";
+            const lotrCitiesArray = ["Mordor","Gondor","Rohan","Beleriand","Mirkwood","Dead Marshes","Rhun","Harad"];
+            const bestThing = "The best thing about a boolean is even if you are wrong you are only off by a bit";
+            
+            var gotCitiesArray = gotCitiesCSV.split(',');
+            var lotrCitiesCSV = lotrCitiesArray.join(',');
+            var bestThingArrayVariant = bestThing.split(' ');
+            var gotCitiesSSV = gotCitiesArray.join(';')
+            var lotrCitiesSortedArray = lotrCitiesArray.sort();
+
+            lotrCitiesArray.splice(2,1);
+
+            console.log(gotCitiesArray);
+            console.log(bestThingArrayVariant);
+            console.log(gotCitiesSSV);
+            console.log(lotrCitiesCSV);
+            console.log(lotrCitiesArray[7] + lotrCitiesArray[6] + lotrCitiesArray[5] + lotrCitiesArray[4] + lotrCitiesArray [3]);
+            console.log(bestThing.slice(23,38));
+            console.log(bestThing.indexOf('only'));
+            console.log(lotrCitiesSortedArray);
+
+            for(var i = 0; i <= gotCitiesArray.length; i++) {
+                if(i === gotCitiesArray.indexOf("Braavos")){console.log(gotCitiesArray[i])};
+                if(i === gotCitiesArray.indexOf("Free Cities")){console.log(gotCitiesArray[i])};
+                if(i === gotCitiesArray.indexOf("Meereen")){console.log(gotCitiesArray[i])};
+            }
+        </script>
+    </body>
+</html>
